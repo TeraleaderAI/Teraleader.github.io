@@ -1,0 +1,60 @@
+
+
+  /* Absolute Position */
+  .img_rowF{
+    position: relative;
+  }
+.int00{
+    top: 250px;
+    left: 400px;
+    
+    position: absolute
+    
+}
+ .int00 int1 {
+    top: 250px;
+    left: 400px;
+    position: absolute;
+}
+ .int00 li.int1-hover{
+  display:none;
+    
+}
+.int00:hover li.int1{
+  display:none;
+}
+.int00:hover li.int1-hover{
+  display:block
+}
+
+
+
+
+
+
+.int01{
+    top: 250px;
+    left: 535px;
+    position: absolute;
+    
+}
+  .int01 int2{
+    top: 250px;
+    left: 535px;
+    position: absolute;
+  
+  }
+  .int01 li.int2-hover{
+
+    display:none;
+  }
+
+.int01:hover li.int2{
+  display:none;
+}
+.int01:hover li.int2-hover{
+  display:block
+}
+
+
+  

@@ -1,0 +1,219 @@
+@charset "euc-kr";
+/* ------------------------------------------------------------
+ * Name      : board.css
+ * Desc      : 게시판 Style
+ * Created   : 2010/09/
+ * Updated   :
+ ------------------------------------------------------------ */
+ 
+/* 게시판상단 line */
+p.boardTopRed {position:relative; float:left; display:inline; width:730px; height:4px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_boardTopRed.gif') left top repeat-x; font-size:0; line-height:0; z-index:10;}
+p.boardTopRed span.spanL {width:1px; height:4px; float:left; background-color:#8b0029; font-size:0; line-height:0;}
+p.boardTopRed span.spanR {width:1px; height:4px; float:right; background-color:#8b0029; font-size:0; line-height:0;}
+
+/* 게시판상단 - 설명글 */
+p.topCaption { position:relative; float:left; width:730px; }
+
+/* 게시판-paging */
+.paging {padding:15px 0 0 0; text-align:center; width:730px; position:relative; float:left;}
+.paging * {margin:0 auto; padding:0;}
+.paging a,
+.paging strong {_position:relative; display:inline-block; margin-right:-6px; padding:3px 5px 2px 5px; color:#666; text-decoration:none !important; line-height:normal; font:11px Verdana; background:#fff;}
+.paging strong {color:#8b0029 !important; font-weight:bold;}
+.paging a:hover {background-color:#ededed;}
+.paging a.pre{padding:0 5px 0 5px; background:none;}
+.paging a.pre_end {padding:0 5px 0 5px; background:none;}
+.paging a.next {padding:0 5px 0 5px; background:none;}
+.paging a.next_end {padding:0 5px 0 5px; background:none;}
+
+/* 게시판-검색 */
+.brdSearch {position:relative; float:left; display:inline; width:494px; height:30px; border:2px solid #d2d2d2; padding:10px 0 0 234px;}
+.brdSearch span.tit {position:relative; float:left; display:inline; padding:3px 10px 0 0;}
+.brdSearch select {position:relative; float:left; display:inline; margin:0 10px 0 0;}
+.brdSearch input {position:relative; float:left; display:inline; margin:0 10px 0 0;}
+.brdSearch input.txt1 {height:16px; border:1px solid #dedede; padding:2px 0 0 4px; background-color:#dfdfdf; border-top:1px solid #b6b6b6; border-left:1px solid #b6b6b6;}
+.brdSearch span {position:relative; float:left; display:inline; margin:0;}
+.brdSearch span input {margin:-3px 0 0 0;}
+
+/* 버튼영역 */
+.brdBtn {width:730px; position:relative; float:left; display:inline; margin-top:10px;}
+.brdBtnL {width:49%; height:30px; position:relative; float:left; display:inline;}
+.brdBtnL span {position:relative; float:left; display:inline; margin:0 10px 0 0;}
+.brdBtnR {width:49%; height:30px; position:relative; float:right; display:inline;}
+.brdBtnR span {position:relative; float:right; display:inline; margin:0 0 0 10px;}
+ 
+/* 일반게시판-목록 */
+table.boardL {position:relative; float:left; display:inline; width:730px; border-top:solid 1px #e5e5e5;}
+.boardL caption {display:none; }
+.boardL thead th {height:20px; padding:10px 0 0 0; border-bottom:1px solid #e5e5e5; background:#f4f4f4; text-align:center;}
+.boardL thead th img {vertical-align:middle;}
+.boardL tbody td {padding:7px 0 4px 0; text-align:center; border-bottom:solid 1px #e5e5e5; background:none; color:#2f3743;}
+.boardL tbody td.aL {text-align:left; vertical-align:top; padding-left:5px;}
+.boardL tbody td.aC {text-align:center; vertical-align:middle; padding-left:5px;}
+.boardL tbody td.date {color:#999;}
+.boardL tbody td.searchResult { background:url('http://imgkdu.dnworks.co.kr/public/common/bg_searchResult.gif') left 20px no-repeat; padding-bottom:20px; }
+.boardL tbody td.searchResult p { text-align:center; margin-top:90px; padding:0 20px 0 20px; }
+.boardL tbody td.re { background:url('http://imgkdu.dnworks.co.kr/public/common/ico_re.gif') 5px 10px no-repeat; padding-left:18px; }
+.boardL tbody td img.new { margin-left:5px; vertical-align:middle; }
+.boardL tbody td img.re { margin-right:5px; vertical-align:middle; }
+.sResult { float:left; width:680px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_search_result.gif') 0 0 no-repeat; padding:50px; border-bottom:1px solid #e5e5e5; }
+.search_result { float:left; display:inline; margin:0 0 0 200px; }
+
+/* 일반게시판-읽기 */
+.boardR {position:relative; float:left; display:inline; width:730px; border-top:solid 1px #e5e5e5;}
+.boardR caption {display:none;}
+.boardR thead th {border-bottom:1px solid #e5e5e5; background:#f4f4f4; text-align:center; height:20px; padding:10px 0 0 0;}
+.boardR thead td {border-bottom:1px solid #e5e5e5; background:#f4f4f4; text-align:left; padding:7px 0 4px 0;}
+.boardR thead td img.new {margin-left:5px; vertical-align:middle;}
+.boardR thead th.tit {background:none;}
+.boardR thead td.tit {background:none;}
+.boardR tbody th {border-bottom:1px solid #e5e5e5; background:#fff; text-align:center; height:20px; padding:10px 0 0 0;}
+.boardR tbody td {padding:6px 0 4px 0; text-align:left; border-bottom:solid 1px #dedede; background:none;}
+.boardR tbody td.con {padding:29px; color:#555555; }
+.boardR tbody td.con02 { padding:29px 29px 100px 29px; color:#555555; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_column_img02.gif') right bottom no-repeat; }
+.boardR tbody td.con03 {padding:20px 0 20px 0; color:#555555; }
+.boardR tbody th.bg {background:#f4f4f4;}
+.boardR tbody td.bg {background:#f4f4f4;}
+.boardR tbody td img.new {margin-left:5px; vertical-align:middle;}
+
+/* 일반게시판-쓰기 */
+.boardW  { position:relative; float:left; display:inline; width:730px; border-collapse:separate; border-top:solid 1px #e5e5e5; }
+.boardW  caption { display:none; }
+.boardW  tbody th { text-align:left; border-bottom:solid 1px #e5e5e5; vertical-align:middle; padding:7px 0 4px 0; background:#f4f4f4; padding-left:12px; }
+.boardW  tbody td { text-align:left; border-bottom:solid 1px #e5e5e5; vertical-align:top; padding:7px 0 4px 12px; }
+.boardW  tbody td.brdCon { padding:10px; line-height:16px; }
+.boardW  tbody td ul.attach { position:relative; float:left; display:inline; width:400px; }
+.boardW  tbody td ul.attach li { position:relative; float:left; display:inline; width:382px; height:20px; background:url('/images/common/ico_attach.gif') left top no-repeat; padding-left:18px; }
+
+/* 게시판 button */
+.brdBtn { position:relative; float:left; width:730px; display:inline; }
+.brdBtnL { width:360px; }
+.brdBtnL span { position:relative; float:left; display:inline; margin:0 5px 0 0; }
+.brdBtnR { width:360px; float:right; }
+.brdBtnR span { position:relative; float:right; display:inline; margin:0 0 0 5px; }
+
+/* 댓글 */
+.opinionBox { position:relative; float:left; border:1px solid #dedede; width:730px; margin:15px 0 0 0; text-align:left; padding:10px 0 10px 0; background-color:#f8f8f8; }
+.opinionBox fieldset { padding:0; border:none; }
+.opinionBox legend { display:none; }
+ul.opinionUpBotH { position:relative; float:left; width:730px; }
+ul.opinionUpBotH li.opinionL { position:relative; float:left; width:80px; display:inline; text-align:center; margin-top:28px; }
+ul.opinionUpBotH li.opinionR { position:relative; float:left; width:650px; display:inline; }
+ul.opinionUpBotH li.opinionR p.write { position:relative; float:left; color:#787878; display:inline; }
+ul.opinionUpBotH li.opinionR p.tel { position:relative; float:left; color:#787878; display:inline; margin-left:10px; }
+textarea.opinion { vertical-align:top; padding:2px 0 1px 3px; border:1px solid #dedede; overflow:auto; }
+textarea.opinion { scrollbar-face-color:#ece9d8; scrollbar-highlight-color:#fff; scrollbar-shadow-color:#aca899; scrollbar-3dlight-color:#d4d0c8; scrollbar-arrow-color:#aca899; scrollbar-track-color:#eae7e1; scrollbar-darkshadow-color:#d4d0c8; }
+
+/* 댓글리스트 */
+.opinionList { position:relative; float:left; width:730px; }
+.opinionList table.comment_list { border-collapse:collapse; }
+.opinionList table.comment_list caption { display:none; }
+.opinionList table.comment_list tbody tr td { padding:13px 0 11px 0; border-bottom:1px solid #dedede; vertical-align:middle; }
+.opinionList table.comment_list tbody tr td.id { color:#787878; text-align:left; padding-left:13px; }
+.opinionList table.comment_list tbody tr td.cont { text-align:left; }
+.opinionList .opinionData { color:#787878; margin-left:10px; display:inline; }
+
+/* 비밀번호 */
+.LBox ul { position:absolute; width:400px; top:80px; left:165px; z-index:20; }
+.LBox ul li.top { position:relative; width:400px; height:40px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_layer_top.gif') left top no-repeat; }
+.LBox ul li.top p { float:left; margin:13px 0 0 30px; display:inline; color:#FFF; font-size:1.2em; font-weight:bold; }
+.LBox ul li.top .close { position:absolute; top:13px; right:28px; z-index:30; }
+.LBox ul li.cont { float:left; width:440px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_layer.gif') 0 0 repeat-y; padding:10px 20px 0 20px; }
+.LBox ul li.bottom { float:left; width:480px; }
+input.txt1 { height:16px; border:1px solid #dedede; padding:2px 0 0 4px; background-color:#dfdfdf; border-top:1px solid #b6b6b6; border-left:1px solid #b6b6b6; }
+
+
+/* 이미지게시판-목록 */
+ul.boardLopt { position:relative; float:right; margin-bottom:5px; }
+ul.boardLopt li { position:relative; float:left; display:inline; margin-left:6px; }
+dl.boardL_02 { position:relative; float:left; display:inline; width:730px; border-bottom:solid 1px #e5e5e5; padding:15px 0 15px 0; }
+dl.boardL_02 dt { position:relative; float:left; display:inline; width:520px; font-size:1.167em; color:#896d44; font-weight:bold; margin-top:9px; }
+dl.boardL_02 dd.txt { position:relative; width:520px; float:left; margin-top:10px; }
+dl.boardL_02 dd.data { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_date.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_02 dd.searchResult { background:url('http://imgkdu.dnworks.co.kr/public/common/bg_searchResult.gif') left 10px no-repeat; padding-bottom:78px; }
+dl.boardL_02 dd.searchResult p { float:left; width:690px; text-align:center; margin-top:70px; padding:0 20px 10px 20px; }
+dl.boardL_02 dd.prof { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/bu_list01_01.gif') left 6px no-repeat; padding-left:6px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_02 dd.major { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/bu_list01_01.gif') left 6px no-repeat; padding-left:6px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_02 dd.write { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_writer.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_02 dd.hit { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_view.gif') left 2px no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_02 dd.dep { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_school.gif') left 0 no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_02 dd.img { position:relative; float:left; width:165px; height:116px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_thum.gif') left top no-repeat; padding:1px; margin:0 25px 0 10px; display:inline; }
+dl.boardL_02 dd.img span { position:absolute; width:62px; height:53px; right:0; bottom:0; z-index:20; }
+dl.boardL_02 dd.sbtn { position:absolute; width:67px; height:21px; right:10px; top:15px; z-index:20; }
+dl.boardL_02 dt a:link { color:#896d44; text-decoration:none; }
+dl.boardL_02 dt a:visited { color:#896d44; text-decoration:none; }
+dl.boardL_02 dt a:hover { color:#7c0019; text-decoration:underline; }
+dl.boardL_02 dt a:active { color:#896d44; text-decoration:none; }
+dl.boardL_02 dt a:focus { color:#896d44; text-decoration:none; }
+
+dl.boardL_03 { position:relative; float:left; display:inline; width:730px; border-bottom:solid 1px #e5e5e5; padding:15px 0 15px 0; background-color:#f0f0f0; }
+dl.boardL_03 dt { position:relative; float:left; display:inline; width:520px; font-size:1.167em; color:#896d44; font-weight:bold; margin-top:9px; }
+dl.boardL_03 dd.txt { position:relative; width:520px; float:left; margin-top:10px; }
+dl.boardL_03 dd.data { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_date.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_03 dd.write { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_writer.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_03 dd.hit { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_view.gif') left 2px no-repeat; padding-left:18px; color:#666; margin-top:3px; display:inline; margin-right:15px; }
+dl.boardL_03 dd.img { position:relative; float:left; width:165px; height:116px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_thum.gif') left top no-repeat; padding:1px; margin:0 25px 0 10px; display:inline; }
+dl.boardL_03 dd.img p.hot { position:absolute; width:45px; height:45px; top:0; left:0; z-index:20; }
+dl.boardL_03 dd.searchResult { background:url('http://imgkdu.dnworks.co.kr/public/common/bg_searchResult.gif') left 10px no-repeat; padding-bottom:78px; }
+dl.boardL_03 dd.searchResult p { float:left; width:690px; text-align:center; margin-top:70px; padding:0 20px 10px 20px; }
+dl.boardL_03 dt a:link { color:#896d44; text-decoration:none; }
+dl.boardL_03 dt a:visited { color:#896d44; text-decoration:none; }
+dl.boardL_03 dt a:hover { color:#7c0019; text-decoration:underline; }
+dl.boardL_03 dt a:active { color:#896d44; text-decoration:none; }
+dl.boardL_03 dt a:focus { color:#896d44; text-decoration:none; }
+
+dl.boardL_04 { position:relative; float:left; display:inline; width:730px; padding:15px 0 15px 0; border-bottom:solid 1px #e5e5e5; }
+dl.boardL_04 dt { position:relative; float:left; display:inline; width:520px; font-size:1.167em; color:#896d44; font-weight:bold; margin-top:9px; }
+dl.boardL_04 dd.txt { position:relative; width:520px; float:left; margin-top:10px; }
+dl.boardL_04 dd.data { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_date.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04 dd.prof { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_writer.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04 dd.file { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_file.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04 dd.hit { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_view.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04 dd.img { position:relative; float:left; width:165px; height:116px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_thum.gif') left top no-repeat; padding:1px; margin:0 25px 0 10px; display:inline; }
+dl.boardL_04 dd.searchResult { background:url('http://imgkdu.dnworks.co.kr/public/common/bg_searchResult.gif') left 10px no-repeat; padding-bottom:78px; }
+dl.boardL_04 dd.searchResult p { float:left; width:690px; text-align:center; margin-top:70px; padding:0 20px 10px 20px; }
+dl.boardL_04 dd.img span { position:absolute; width:62px; height:53px; right:0; bottom:0; z-index:20; }
+dl.boardL_04 dd.sbtn { position:absolute; width:67px; height:21px; right:10px; top:15px; z-index:20; }
+dl.boardL_04 dt a:link { color:#896d44; text-decoration:none; }
+dl.boardL_04 dt a:visited { color:#896d44; text-decoration:none; }
+dl.boardL_04 dt a:hover { color:#7c0019; text-decoration:underline; }
+dl.boardL_04 dt a:active { color:#896d44; text-decoration:none; }
+dl.boardL_04 dt a:focus { color:#896d44; text-decoration:none; }
+
+dl.boardL_04_1 { position:relative; float:left; display:inline; width:724px; padding:15px 0 15px 0; border:3px solid #dedede; margin-bottom:15px; }
+dl.boardL_04_1 dt { position:relative; float:left; display:inline; width:514px; font-size:1.167em; color:#896d44; font-weight:bold; margin-top:9px; }
+dl.boardL_04_1 dd.txt { position:relative; width:514px; float:left; margin-top:10px; }
+dl.boardL_04_1 dd.data { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_date.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04_1 dd.prof { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_writer.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04_1 dd.file { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_file.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04_1 dd.hit { position:relative; float:left; background:url('http://imgkdu.dnworks.co.kr/public/common/ico_view.gif') left top no-repeat; padding-left:18px; color:#666; margin-top:5px; display:inline; margin-right:15px; }
+dl.boardL_04_1 dd.img { position:relative; float:left; width:165px; height:116px; background:url('http://imgkdu.dnworks.co.kr/public/common/bg_thum.gif') left top no-repeat; padding:1px; margin:0 25px 0 10px; display:inline; }
+dl.boardL_04_1 dd.img span { position:absolute; width:62px; height:53px; right:0; bottom:0; z-index:20; }
+dl.boardL_04_1 dd.sbtn { position:absolute; width:67px; height:21px; right:10px; top:15px; z-index:20; }
+dl.boardL_04_1 dt a:link { color:#896d44; text-decoration:none; }
+dl.boardL_04_1 dt a:visited { color:#896d44; text-decoration:none; }
+dl.boardL_04_1 dt a:hover { color:#7c0019; text-decoration:underline; }
+dl.boardL_04_1 dt a:active { color:#896d44; text-decoration:none; }
+dl.boardL_04_1 dt a:focus { color:#896d44; text-decoration:none; }
+dl.boardL_04_1 dd.searchResult { background:url('http://imgkdu.dnworks.co.kr/public/common/bg_searchResult.gif') left 10px no-repeat; padding-bottom:78px; }
+dl.boardL_04_1 dd.searchResult p { float:left; width:690px; text-align:center; margin-top:70px; padding:0 20px 10px 20px; }
+.recommendBox { position:relative; float:left; width:730px; }
+.recommendBox .recommend { position:relative; float:left; z-index:30; }
+.recommendBox .recommend p { position:absolute; width:59px; height:59px; left:0; top:0; z-index:100; }
+
+/* 이벤트게시판-목록 */
+table.eventL { position:relative; float:left; display:inline; width:730px; border-top:solid 1px #e5e5e5; }
+.eventL caption { display:none; }
+.eventL thead th { height:20px; padding:10px 0 0 0; border-bottom:1px solid #e5e5e5; background:#f4f4f4; text-align:center; }
+.eventL thead th img { vertical-align:middle; }
+.eventL tbody td { padding:7px 0 4px 0; text-align:center; border-bottom:solid 1px #e5e5e5; background:none; color:#2f3743; vertical-align:middle; }
+.eventL tbody td.aL { text-align:left; padding-left:5px; }
+.eventL tbody td.aC { text-align:center; vertical-align:middle; padding-left:5px; }
+.eventL tbody td.date { color:#999; }
+.eventL tbody td.stork img { border:2px solid #e5e5e5; }
+.eventL tbody td.re { background:url('http://imgkdu.dnworks.co.kr/public/common/ico_re.gif') 5px 10px no-repeat; padding-left:18px; }
+.eventL tbody td img.new { margin-left:5px; vertical-align:middle; }
+.eventL tbody td img.re { margin-right:5px; vertical-align:middle; }
+
+
+

@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import notices from '../../data/notices.json';
+import company from '../../data/company.json';
+
+const sortedNotices = [...notices].sort((a, b) => b.date.localeCompare(a.date));
+---
+<BaseLayout title={`공지사항 | ${company.name}`} description="테라리더 공지사항과 업데이트를 확인할 수 있습니다.">
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Notice</p>
+        <h1>공지사항</h1>
+        <p>제품 자료, 홈페이지 업데이트, 운영 안내를 확인할 수 있습니다.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        {sortedNotices.length > 0 ? (
+          <div class="notice-list">
+            {sortedNotices.map((notice) => (
+              <a class="notice-card" href={`/notices/${notice.id}/`}>
+                <time datetime={notice.date}>{notice.date}</time>
+                <strong>{notice.title}</strong>
+              </a>
+            ))}
+          </div>
+        ) : (
+          <div class="empty-state">등록된 공지사항이 없습니다.</div>
+        )}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

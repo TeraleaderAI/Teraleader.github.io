@@ -1,0 +1,50 @@
+	#mytd {padding: 2px 9px 0px 8px; cursor:hand; font-size: 9pt; color: #404040}
+	#mylink {color: #333333; text-decoration: none}
+	#mylink:link {color: #333333; text-decoration: none}
+	#mylink:visited {color: #333333; text-decoration: none}
+	#mylink:hover {color: #999999; text-decoration: underline}
+
+	form {display:inline}
+	body, th, caption, li, input, button, select, textarea, p {FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: ±¼¸², Gulim;}	
+
+	img {border:0px none; }
+	input {FONT-FAMILY:µ¸¿ò;  FONT-SIZE:12px; BORDER:#C7C7C7 1px solid; COLOR:#525252; HEIGHT:20px;}
+
+  textarea   {FONT-FAMILY:µ¸¿ò; FONT-SIZE:12px; COLOR:#525252; background:#FFFFFF; BORDER:#C7C7C7 1px solid; PADDING:4px;
+              scrollbar-track-color:#FFFFFF; scrollbar-face-color:#FFFFFF;
+              scrollbar-3dlight-color:#FFFFFF; scrollbar-highlight-color:#FFFFFF;
+              scrollbar-shadow-color:#FFFFFF; scrollbar-darkshadow-color:#FFFFFF;
+              scrollbar-arrow-color:#DDDDDD;}
+
+	.no_Line						{border:none; height:auto;}
+
+	.border {border-width:1;border-style:solid;border-width:1px}
+	
+	.skinTotal {font-family:tahoma; color:#FB6138; font-weight:bold; font-size:11px }
+	.skinPage {font-family:tahoma; font-size:11px }
+	.skinList {font-size:11px; text-align:center }
+	.CateListForm{width:200px; font-size:12px}
+	.CateWriteForm{font-size:12px}
+	.boardNum {font-family:tahoma; font-size:10px}
+
+	.w80 {width:80px;}
+
+	.h20 {height:20px;}
+	.h25 {height:25px;}
+	.h33 {height:33px;}
+	.h30 {height:30px;}
+	.h40 {height:40px;}
+
+	.pdr5 {padding-right:5px;}
+	.pdl5 {padding-left:5px;}
+	.pdt5 {padding-top:5px;}
+	.pdb5 {padding-bottom:5px;}
+	.pdt10 {padding-top:10px;}
+	.pdl10 {padding-left:10px;}
+	.pdr10 {padding-right:10px;}
+	.pda5{padding:5px 5px 5px 5px}
+	
+	.topBtnMarg {margin-left:5px; margin-right:5px;}
+	
+	.font11 {font-size:11px}
+	.font16 {font-size:16px}

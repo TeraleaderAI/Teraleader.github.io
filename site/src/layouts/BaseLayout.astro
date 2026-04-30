@@ -1,0 +1,77 @@
+---
+import '../styles/global.css';
+import company from '../data/company.json';
+
+const {
+  title = company.name,
+  description = company.summary,
+  current = '',
+  image = '/images/main/hero-products.jpg'
+} = Astro.props;
+
+const navItems = [
+  { href: '/index.html', label: '홈', key: 'home' },
+  { href: '/company/', label: '회사소개', key: 'company' },
+  { href: '/products/', label: '제품안내', key: 'products' },
+  { href: '/technology/', label: '기술정보', key: 'technology' },
+  { href: '/support/', label: '문의/A/S', key: 'support' }
+];
+---
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="/index.html" aria-label="TeraLeader home">
+          <img src="/images/common/logo.gif" alt="TeraLeader" width="151" height="42" />
+        </a>
+        <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false">≡</button>
+        <nav id="main-nav" class="main-nav" data-open="false" aria-label="주요 메뉴">
+          <ul>
+            {navItems.map((item) => (
+              <li>
+                <a href={item.href} aria-current={current === item.key ? 'page' : undefined}>{item.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <slot />
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <img src="/images/common/footer-logo.gif" alt="TeraLeader" width="132" />
+        <div class="footer-info">
+          <p><strong>{company.legalName}</strong></p>
+          <p>{company.address}</p>
+          <p>Tel. {company.tel} | Fax. {company.fax} | Email. <a href={`mailto:${company.email}`}>{company.email}</a></p>
+          <p>{company.copyright}</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('#main-nav');
+      toggle?.addEventListener('click', () => {
+        const next = nav?.getAttribute('data-open') !== 'true';
+        nav?.setAttribute('data-open', String(next));
+        toggle.setAttribute('aria-expanded', String(next));
+      });
+    </script>
+  </body>
+</html>

@@ -12,3 +12,4 @@
 - `tools/content-manager`는 로컬 HTTP 도구로 유지하고 `http://127.0.0.1:5081/`에서 제품 정보를 편집한다.
 - 정적 생성 스크립트는 `tools/content-manager/build-static.mjs`이며 루트의 `index.html`, `products/index.html`, 제품 상세 페이지, `sitemap.xml`을 다시 쓴다.
 - 현재 관리 도구는 제품 추가, 삭제, 공개 전환, 주요 필드, 태그, 특징, 사양, 다운로드 항목 편집을 지원한다.
+- 루트의 `start-content-manager.cmd`를 더블클릭하면 `http://127.0.0.1:5081/`을 열고 `tools/content-manager/server.mjs`를 실행한다.

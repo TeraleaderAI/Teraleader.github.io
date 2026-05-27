@@ -4,6 +4,10 @@
 
 ## 실행
 
+저장소 루트의 `start-content-manager.cmd`를 더블클릭하면 됩니다.
+
+또는 명령 프롬프트에서 직접 실행할 수 있습니다.
+
 ```bash
 cd tools/content-manager
 npm start

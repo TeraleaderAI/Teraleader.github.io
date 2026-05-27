@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://teraleader.synology.me:50081/</loc></url>
   <url><loc>https://teraleader.synology.me:50081/company/</loc></url>
@@ -12,7 +12,6 @@
   <url><loc>https://teraleader.synology.me:50081/products/ampoule-furnace/</loc></url>
   <url><loc>https://teraleader.synology.me:50081/products/thermal-analysis-system/</loc></url>
   <url><loc>https://teraleader.synology.me:50081/products/tbs-system/</loc></url>
-  <url><loc>https://teraleader.synology.me:50081/products/new-product-1777508663425/</loc></url>
   <url><loc>https://teraleader.synology.me:50081/notices/notice-2026-01/</loc></url>
   <url><loc>https://teraleader.synology.me:50081/notices/notice-products/</loc></url>
 </urlset>

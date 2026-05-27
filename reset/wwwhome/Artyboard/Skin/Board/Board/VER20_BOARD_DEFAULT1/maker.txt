@@ -1,1 +1,0 @@
-<a href=http://webarty.com target=_blank onfocus='this.blur()'><b>Webarty</b></a>

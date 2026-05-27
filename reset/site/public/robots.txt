@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teraleader.synology.me:50081/sitemap.xml
